@@ -8,14 +8,17 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 
 public class TestBase {
-	WebDriver driver;
+	public WebDriver driver;
 	
 	@BeforeClass
 	public void atStart(){
 		driver = new ChromeDriver();
+		driver.get("https://demowebshop.tricentis.com/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
+	
+	
 	
 	@AfterTest
 	public void atEnd() throws InterruptedException {
