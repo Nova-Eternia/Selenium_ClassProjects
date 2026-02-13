@@ -1,11 +1,11 @@
 package com.selenium.testing.Project1_Online_E_Commerce_Website_Automation.testCases;
 
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
 import com.selenium.testing.Project1_Online_E_Commerce_Website_Automation.base.TestBase;
 import com.selenium.testing.Project1_Online_E_Commerce_Website_Automation.pageDesign.Footer.CustomerServicePage;
 import com.selenium.testing.Project1_Online_E_Commerce_Website_Automation.pageDesign.Footer.SearchPage;
-
-import org.testng.Assert;
-import org.testng.annotations.*;
 
 public class SearchTest extends TestBase {
 	

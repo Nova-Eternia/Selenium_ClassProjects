@@ -15,7 +15,7 @@ public class LoginPageDesign {
 	}
 
 	@FindBy(id = "Email")
-	WebElement username;
+	WebElement email;
 
 	@FindBy(id = "Password")
 	WebElement password;
@@ -29,17 +29,55 @@ public class LoginPageDesign {
 	@FindBy(linkText = "Log out")
 	WebElement logOutBtn;
 
-	public void login(String name, String pass) {
-		username.sendKeys(name);
+	@FindBy(linkText = "Forgot password?")
+	WebElement forgetPass;
+
+	@FindBy(css = "div.page-title h1")
+	WebElement verificationText;
+	
+	@FindBy(css="div[class=\"validation-summary-errors\"]")
+	WebElement invalidText;
+
+	public String getLoginPageHeading() {
+		return verificationText.getText();
+	}
+
+	public void enterEmail(String mail) {
+		email.sendKeys(mail);
+	}
+
+	public void enterPassword(String pass) {
 		password.sendKeys(pass);
+	}
+
+	public void clickSubmit() {
 		submit.click();
 	}
 
-	public void ClickLoginBtn() {
+	public boolean isLoginHeadingDisplayed() {
+		return verificationText.isDisplayed();
+	}
+	
+	public boolean isLogoutButtonDisplayed() {
+		return logOutBtn.isDisplayed();
+	}
+
+	public void clickForgotPassword() {
+		forgetPass.click();
+	}
+
+	public void clickLoginBtn() {
 		loginBtn.click();
 	}
 
-	public void ClickLogOutBtn() {
+	public void clickLogOut() {
 		logOutBtn.click();
 	}
+	
+	public String isInvalidTextPresent() {
+		return invalidText.getText();
+	}
+	
+	
+
 }

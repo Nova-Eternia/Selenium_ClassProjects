@@ -1,14 +1,13 @@
 package com.selenium.testing.Project1_Online_E_Commerce_Website_Automation.testCases;
 
+//import org.openqa.selenium.WebDriver;
+//import org.openqa.selenium.WebElement;
+//import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
 import com.selenium.testing.Project1_Online_E_Commerce_Website_Automation.base.TestBase;
 import com.selenium.testing.Project1_Online_E_Commerce_Website_Automation.pageDesign.RegisterPageDesign;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.By;
-
-import org.testng.annotations.*;
 
 public class RegisterPageTest extends TestBase {
 	
