@@ -1,1 +1,18 @@
-/.metadata/
+# Mac
+.DS_Store
+
+# Eclipse
+.metadata/
+.classpath
+.project
+.settings/
+
+# Maven
+target/
+
+# TestNG
+test-output/
+reports/
+
+# Logs
+*.log
