@@ -18,12 +18,9 @@ public class TestBase {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 	
-	
-	
 	@AfterTest
 	public void atEnd() throws InterruptedException {
 		Thread.sleep(3000);
 		driver.quit();
 	}
-
 }

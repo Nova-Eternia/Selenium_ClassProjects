@@ -18,7 +18,6 @@ public class RegisterPageTest extends TestBase {
 	@Test
 	public void validRegistration() {
 		register = new RegisterPageDesign(driver);
-		
 		register.clickRegister();
 		register.chooseGenderFemale();
 		register.FirstName("Riya");
@@ -28,7 +27,52 @@ public class RegisterPageTest extends TestBase {
 		register.fillConfirmPwd("riyaSingh@123");
 		register.register();
 		register.verifyRegistration();
-		register.clickContinue();
-		
+		register.clickContinue();	
+	}
+	
+	@Test
+	public void invalidPassowrdRegistration() {
+		register = new RegisterPageDesign(driver);
+		register.clickRegister();
+		register.chooseGenderFemale();
+		register.FirstName("Riya");
+		register.LastName("Singh");
+		register.fillEmail("riyaSingh@example.com");
+		register.fillPwd("riyaSingh@123");
+		register.fillConfirmPwd("riyaSingh@123");
+		register.register();
+		register.verifyRegistration();
+		register.clickContinue();	
+	}
+	
+	@Test
+	public void sameEmailRegistration() {
+		register = new RegisterPageDesign(driver);
+		register.clickRegister();
+		register.chooseGenderFemale();
+		register.FirstName("Riya");
+		register.LastName("Singh");
+		register.fillEmail("riyaSingh@example.com");
+		register.fillPwd("riyaSingh@123");
+		register.fillConfirmPwd("riyaSingh@123");
+		register.register();
+		register.verifyRegistration();
+		register.clickContinue();	
+	}
+	
+	@Test
+	public void invalidRegistration() {
+		register = new RegisterPageDesign(driver);
+		register.clickRegister();
+		register.chooseGenderFemale();
+		register.FirstName("Riya");
+		register.LastName("Singh");
+		register.fillEmail("riyaSingh@example.com");
+		register.fillPwd("riyaSingh@123");
+		register.fillConfirmPwd("riyaSingh@123");
+		register.register();
+		register.verifyRegistration();
+		register.clickContinue();	
 	}
 }
+

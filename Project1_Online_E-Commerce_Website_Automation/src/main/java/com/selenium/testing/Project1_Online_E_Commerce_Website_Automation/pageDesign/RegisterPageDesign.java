@@ -6,9 +6,9 @@ import org.openqa.selenium.support.FindBy;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-//import org.openqa.selenium
+
 import org.openqa.selenium.*;
-import org.testng.Assert;
+//import org.testng.Assert;
 
 
 public class RegisterPageDesign {
@@ -92,7 +92,6 @@ public class RegisterPageDesign {
 	
 	public void verifyRegistration() {
 		String expectedStr = "Your registration completed";
-//		String resultStr = driver.getTitle();
 		String resultStr = verifyText.getText() ;
 		Assert.assertEquals(resultStr, expectedStr);
 	}
