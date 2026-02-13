@@ -1,4 +1,4 @@
-package com.selenium.testing.Project1_Online_E_Commerce_Website_Automation.testCases;
+package com.selenium.testing.Project1_Online_E_Commerce_Website_Automation.testCases.individualTests;
 
 import org.testng.annotations.Test;
 
@@ -9,7 +9,6 @@ public class LoginPageTest extends TestBase{
 	
 	LoginPageDesign loginPage ;
 	
-	
 	@Test
 	public void loginPageTest() {
 		loginPage = new LoginPageDesign(driver);
@@ -17,4 +16,5 @@ public class LoginPageTest extends TestBase{
 		loginPage.ClickLoginBtn();
 		loginPage.login("bhura6262@gmail.com", "Bhura@123");
 	}
+	
 }

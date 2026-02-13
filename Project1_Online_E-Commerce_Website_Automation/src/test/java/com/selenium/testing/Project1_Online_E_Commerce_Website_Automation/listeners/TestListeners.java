@@ -4,12 +4,14 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class TestListeners implements ITestListener {
+import com.selenium.testing.Project1_Online_E_Commerce_Website_Automation.base.TestBase;
+
+public class TestListeners extends TestBase implements ITestListener {
 
 	@Override
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
-		ITestListener.super.onTestStart(result);
+		test = extent.createTest(result.getName());
 	}
 
 	@Override
@@ -51,7 +53,7 @@ public class TestListeners implements ITestListener {
 	@Override
 	public void onFinish(ITestContext context) {
 		// TODO Auto-generated method stub
-		ITestListener.super.onFinish(context);
+		extent.flush();
 	}
 
 	
