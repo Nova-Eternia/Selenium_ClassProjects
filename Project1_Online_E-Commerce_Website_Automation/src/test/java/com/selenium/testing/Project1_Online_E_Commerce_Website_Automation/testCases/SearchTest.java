@@ -13,7 +13,7 @@ public class SearchTest extends TestBase {
 	public SearchPage search;
 	
 	@Test
-	public void SearchTest() {
+	public void searchTest() {
 		search = new SearchPage(driver);
 		search.SearchProduct();
 		String expURL = "https://demowebshop.tricentis.com/search?Q=book&As=true&As=false&Cid=0&Isc=true&Isc=false&Mid=0&Pf=&Pt=&Sid=true&Sid=false";
