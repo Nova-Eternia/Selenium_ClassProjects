@@ -19,6 +19,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.selenium.testing.Project1_Online_E_Commerce_Website_Automation.utilities.ExtentManager;
 
 public class TestBase {
+<<<<<<< HEAD
 	public static WebDriver driver;
 	public static Properties config = new Properties();
 	public static Properties global = new Properties();
@@ -57,6 +58,14 @@ public class TestBase {
 		String url = global.getProperty("websiteURL");
 		driver.get(url);
 		
+=======
+	public WebDriver driver;
+	
+	@BeforeClass
+	public void atStart(){
+		driver = new ChromeDriver();
+		driver.get("https://demowebshop.tricentis.com/");
+>>>>>>> develop
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		wait = new WebDriverWait(driver,Duration.ofSeconds(5));
@@ -67,5 +76,4 @@ public class TestBase {
 		Thread.sleep(3000);
 		driver.quit();
 	}
-
 }
