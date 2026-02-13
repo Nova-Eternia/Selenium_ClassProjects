@@ -1,22 +1,11 @@
 package com.selenium.testing.Project1_Online_E_Commerce_Website_Automation.pageDesign;
 
-<<<<<<< HEAD
 
-public class RegisterPageDesign {
-	
-	
-	
-	
-=======
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
->>>>>>> develop
-
-
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-
-import org.openqa.selenium.*;
 //import org.testng.Assert;
 
 
