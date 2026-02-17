@@ -1,18 +1,10 @@
 package com.selenium.testing.Project1_Online_E_Commerce_Website_Automation.testCases;
 
-<<<<<<< HEAD
-//import org.openqa.selenium.WebDriver;
-//import org.openqa.selenium.WebElement;
-//import org.openqa.selenium.chrome.ChromeDriver;
-//import org.openqa.selenium.By;
-import org.testng.annotations.Test;
-=======
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import org.openqa.selenium.By;
 
->>>>>>> c1dbfa710e6df696947761e5fbe60c4cd58cc44c
 
 import com.selenium.testing.Project1_Online_E_Commerce_Website_Automation.base.TestBase;
 import com.selenium.testing.Project1_Online_E_Commerce_Website_Automation.pageDesign.RegisterPageDesign;
